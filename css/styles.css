@@ -115,10 +115,13 @@ body {
 }
 
 .header-contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-primery-color);
+  gap: 10px;
 }
 
 .header-contacts-link:hover,
@@ -131,7 +134,15 @@ body {
 }
 /* main */
 .hero {
-  background: #2f303a;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url('../images/Img-overlay.svg'), url('../images/hero-bg.jpg');
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-titel {
@@ -284,6 +295,11 @@ body {
   align-items: center;
   gap: 50px;
 }
+
+.header-icon {
+  fill: currentColor;
+}
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -312,6 +328,17 @@ body {
 
 .benefits-item {
   width: 270px;
+}
+
+.benefits-area-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
 }
 
 .benefits-list-titel {
@@ -375,6 +402,9 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #2f303a;
 }
 
 /* portfolio */
